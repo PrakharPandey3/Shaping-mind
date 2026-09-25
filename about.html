@@ -1,0 +1,2675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Roli Pandey — Academic Director, Educational Leader and School Transformation Professional."
+  />
+
+  <title>About Roli Pandey | Academic Director</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..900;1,9..40,400..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- YOUR EXISTING WEBSITE CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-page {
+      padding-top: 120px;
+      overflow: hidden;
+    }
+
+
+    /* =====================================================
+       SHARED
+    ===================================================== */
+
+    .about-container {
+      width: min(1200px, 88vw);
+      margin: 0 auto;
+    }
+
+    .about-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+    }
+
+    .about-eyebrow span {
+      color: #e9572b;
+    }
+
+    .orange {
+      color: #e9572b;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .profile-hero {
+      min-height: 82vh;
+
+      display: flex;
+      align-items: center;
+
+      padding: 90px 0 120px;
+    }
+
+    .profile-hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.25fr
+        0.75fr;
+
+      gap: 8vw;
+
+      align-items: end;
+    }
+
+    .profile-hero h1 {
+      margin: 30px 0 30px;
+
+      font-size:
+        clamp(
+          4.2rem,
+          9vw,
+          9.5rem
+        );
+
+      line-height: 0.82;
+
+      letter-spacing: -0.075em;
+
+      font-weight: 700;
+    }
+
+    .profile-hero h1 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .profile-subtitle {
+      max-width: 760px;
+
+      font-size:
+        clamp(
+          1rem,
+          1.5vw,
+          1.3rem
+        );
+
+      line-height: 1.65;
+
+      color: #555;
+
+      margin: 0;
+    }
+
+    .profile-hero-side {
+      padding-bottom: 8px;
+    }
+
+    .profile-hero-side p {
+      font-size: 1.05rem;
+
+      line-height: 1.8;
+
+      color: #555;
+
+      margin: 0 0 25px;
+    }
+
+    .profile-role {
+      border-top:
+        1px solid rgba(0,0,0,.14);
+
+      padding-top: 22px;
+
+      font-size: .85rem;
+
+      line-height: 1.7;
+
+      text-transform: uppercase;
+
+      letter-spacing: .06em;
+    }
+
+
+    /* =====================================================
+       EXPERIENCE STRIP
+    ===================================================== */
+
+    .experience-strip {
+      background: #171717;
+
+      color: #f5f0e8;
+
+      padding: 65px 0;
+    }
+
+    .experience-strip-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr
+        1fr;
+
+      gap: 40px;
+
+      align-items: center;
+    }
+
+    .experience-number {
+      font-size:
+        clamp(
+          5rem,
+          10vw,
+          9rem
+        );
+
+      line-height: .8;
+
+      letter-spacing: -.07em;
+
+      color: #e9572b;
+    }
+
+    .experience-label {
+      font-size: .75rem;
+
+      text-transform: uppercase;
+
+      letter-spacing: .14em;
+
+      color: rgba(
+        245,
+        240,
+        232,
+        .55
+      );
+    }
+
+    .experience-strip h3 {
+      font-size:
+        clamp(
+          1.8rem,
+          3vw,
+          3rem
+        );
+
+      line-height: 1;
+
+      margin: 0;
+    }
+
+
+    /* =====================================================
+       JOURNEY
+    ===================================================== */
+
+    .journey {
+      padding: 140px 0;
+    }
+
+    .journey-grid {
+      display: grid;
+
+      grid-template-columns:
+        .65fr
+        1.35fr;
+
+      gap: 9vw;
+    }
+
+    .journey-title h2 {
+      margin: 30px 0 0;
+
+      font-size:
+        clamp(
+          2.8rem,
+          5vw,
+          5.5rem
+        );
+
+      line-height: .92;
+
+      letter-spacing: -.06em;
+    }
+
+    .journey-title h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .journey-content {
+      max-width: 720px;
+    }
+
+    .journey-question {
+      font-size:
+        clamp(
+          1.5rem,
+          2.5vw,
+          2.3rem
+        );
+
+      line-height: 1.2;
+
+      letter-spacing: -.035em;
+
+      margin: 0 0 35px;
+    }
+
+    .journey-content p {
+      color: #555;
+
+      font-size: 1.05rem;
+
+      line-height: 1.8;
+
+      margin: 0 0 25px;
+    }
+
+
+    /* =====================================================
+       TEACHER DEVELOPMENT
+    ===================================================== */
+
+    .development {
+      background: #f1eadf;
+
+      padding: 120px 0;
+    }
+
+    .development-header {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-end;
+
+      gap: 50px;
+
+      margin-bottom: 65px;
+    }
+
+    .development-header h2 {
+      margin: 25px 0 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6.5rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .development-header h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .development-header p {
+      max-width: 370px;
+
+      color: #666;
+
+      line-height: 1.7;
+
+      margin: 0;
+    }
+
+    .topic-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 1px;
+
+      background: rgba(0,0,0,.15);
+
+      border-top:
+        1px solid rgba(0,0,0,.15);
+    }
+
+    .topic {
+      background: #f1eadf;
+
+      padding: 28px 25px;
+
+      font-size: 1rem;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 18px;
+    }
+
+    .topic-number {
+      color: #e9572b;
+
+      font-size: .75rem;
+
+      font-weight: 700;
+
+      min-width: 28px;
+    }
+
+
+    /* =====================================================
+       LEADERSHIP IMPACT
+    ===================================================== */
+
+    .leadership {
+      padding: 140px 0;
+    }
+
+    .leadership-heading {
+      max-width: 850px;
+
+      margin-bottom: 70px;
+    }
+
+    .leadership-heading h2 {
+      margin: 25px 0 20px;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6.5rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .leadership-heading h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .leadership-heading p {
+      max-width: 650px;
+
+      color: #666;
+
+      line-height: 1.7;
+
+      font-size: 1.05rem;
+    }
+
+    .impact-cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 18px;
+    }
+
+    .impact-card {
+      min-height: 290px;
+
+      border:
+        1px solid rgba(0,0,0,.12);
+
+      border-radius: 22px;
+
+      padding: 32px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: space-between;
+
+      transition:
+        transform .35s ease,
+        background .35s ease;
+    }
+
+    .impact-card:hover {
+      transform: translateY(-6px);
+
+      background: #f4eee5;
+    }
+
+    .impact-card-number {
+      font-size: .75rem;
+
+      color: #e9572b;
+
+      letter-spacing: .1em;
+    }
+
+    .impact-card h3 {
+      font-size: 1.65rem;
+
+      margin: 0 0 12px;
+
+      letter-spacing: -.025em;
+    }
+
+    .impact-card p {
+      margin: 0;
+
+      color: #666;
+
+      line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       PHILOSOPHY
+    ===================================================== */
+
+    .philosophy {
+      background: #171717;
+
+      color: #f5f0e8;
+
+      padding: 140px 0;
+    }
+
+    .philosophy-header {
+      display: grid;
+
+      grid-template-columns:
+        .8fr
+        1.2fr;
+
+      gap: 8vw;
+
+      margin-bottom: 85px;
+    }
+
+    .philosophy-header h2 {
+      margin: 25px 0 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .philosophy-header h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .philosophy-intro {
+      max-width: 650px;
+
+      align-self: end;
+
+      color: rgba(
+        245,
+        240,
+        232,
+        .68
+      );
+
+      font-size: 1.1rem;
+
+      line-height: 1.8;
+    }
+
+    .philosophy-pillars {
+      display: grid;
+
+      grid-template-columns:
+        repeat(5, 1fr);
+
+      border-top:
+        1px solid rgba(
+          255,
+          255,
+          255,
+          .15
+        );
+    }
+
+    .pillar {
+      padding:
+        30px 22px 30px 0;
+
+      border-right:
+        1px solid rgba(
+          255,
+          255,
+          255,
+          .15
+        );
+    }
+
+    .pillar + .pillar {
+      padding-left: 22px;
+    }
+
+    .pillar:last-child {
+      border-right: none;
+    }
+
+    .pillar-number {
+      color: #e9572b;
+
+      font-size: .75rem;
+
+      letter-spacing: .1em;
+
+      display: block;
+
+      margin-bottom: 55px;
+    }
+
+    .pillar h3 {
+      margin: 0 0 12px;
+
+      font-size: 1.25rem;
+    }
+
+    .pillar p {
+      color: rgba(
+        245,
+        240,
+        232,
+        .55
+      );
+
+      line-height: 1.65;
+
+      margin: 0;
+
+      font-size: .92rem;
+    }
+
+
+    /* =====================================================
+       VISION
+    ===================================================== */
+
+    .vision {
+      padding: 140px 0;
+    }
+
+    .vision-inner {
+      max-width: 1050px;
+
+      margin: 0 auto;
+
+      text-align: center;
+    }
+
+    .vision-quote {
+      font-size:
+        clamp(
+          2.5rem,
+          5vw,
+          5.5rem
+        );
+
+      line-height: .98;
+
+      letter-spacing: -.055em;
+
+      margin: 35px 0 55px;
+    }
+
+    .vision-quote em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .vision-copy {
+      max-width: 700px;
+
+      margin: 0 auto;
+
+      color: #666;
+
+      line-height: 1.8;
+
+      font-size: 1.05rem;
+    }
+
+    .vision-words {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 15px;
+
+      margin-top: 45px;
+    }
+
+    .vision-words span {
+      padding:
+        10px 18px;
+
+      border:
+        1px solid rgba(0,0,0,.14);
+
+      border-radius: 100px;
+
+      font-size: .85rem;
+    }
+
+
+    /* =====================================================
+       TEACHER AT HEART
+    ===================================================== */
+
+    .teacher-heart {
+      background: #e9572b;
+
+      color: white;
+
+      padding: 120px 0;
+    }
+
+    .teacher-heart-grid {
+      display: grid;
+
+      grid-template-columns:
+        .8fr
+        1.2fr;
+
+      gap: 9vw;
+
+      align-items: center;
+    }
+
+    .teacher-heart h2 {
+      margin: 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6.5rem
+        );
+
+      line-height: .86;
+
+      letter-spacing: -.065em;
+    }
+
+    .teacher-heart-copy p {
+      font-size:
+        clamp(
+          1.1rem,
+          1.8vw,
+          1.4rem
+        );
+
+      line-height: 1.65;
+
+      margin: 0 0 25px;
+    }
+
+    .teacher-heart-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* =====================================================
+       BEYOND CLASSROOM
+    ===================================================== */
+
+    .beyond {
+      padding: 140px 0;
+    }
+
+    .beyond-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 8vw;
+
+      align-items: center;
+    }
+
+    .beyond h2 {
+      margin: 25px 0 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .beyond h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .beyond-copy {
+      color: #555;
+
+      font-size: 1.05rem;
+
+      line-height: 1.8;
+    }
+
+    .book-card {
+      margin-top: 45px;
+
+      padding: 30px;
+
+      border-radius: 20px;
+
+      background: #171717;
+
+      color: #f5f0e8;
+    }
+
+    .book-card small {
+      color: #e9572b;
+
+      text-transform: uppercase;
+
+      letter-spacing: .12em;
+    }
+
+    .book-card h3 {
+      font-size: 2rem;
+
+      margin: 12px 0 8px;
+    }
+
+    .book-card p {
+      margin: 0;
+
+      color: rgba(
+        245,
+        240,
+        232,
+        .6
+      );
+    }
+
+
+    /* =====================================================
+       WHAT I STAND FOR
+    ===================================================== */
+
+    .stand-for {
+      background: #171717;
+
+      color: #f5f0e8;
+
+      padding: 140px 0;
+    }
+
+    .stand-for-grid {
+      display: grid;
+
+      grid-template-columns:
+        .7fr
+        1.3fr;
+
+      gap: 8vw;
+    }
+
+    .stand-for h2 {
+      margin: 25px 0 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .stand-for-list {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 0;
+    }
+
+    .stand-for-list div {
+      padding:
+        23px 0;
+
+      border-bottom:
+        1px solid rgba(
+          255,
+          255,
+          255,
+          .14
+        );
+
+      font-size:
+        clamp(
+          1.5rem,
+          3vw,
+          2.8rem
+        );
+
+      letter-spacing: -.035em;
+    }
+
+    .stand-for-list div:first-child {
+      border-top:
+        1px solid rgba(
+          255,
+          255,
+          255,
+          .14
+        );
+    }
+
+    .stand-for-list span {
+      color: #e9572b;
+    }
+
+    .stand-for-bottom {
+      margin-top: 65px;
+
+      max-width: 700px;
+
+      margin-left: auto;
+
+      color: rgba(
+        245,
+        240,
+        232,
+        .6
+      );
+
+      line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       ROAD AHEAD
+    ===================================================== */
+
+    .road {
+      padding: 140px 0;
+    }
+
+    .road-grid {
+      display: grid;
+
+      grid-template-columns:
+        .8fr
+        1.2fr;
+
+      gap: 8vw;
+    }
+
+    .road h2 {
+      margin: 25px 0 0;
+
+      font-size:
+        clamp(
+          3rem,
+          6vw,
+          6rem
+        );
+
+      line-height: .88;
+
+      letter-spacing: -.065em;
+    }
+
+    .road h2 em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+    .road-copy {
+      color: #555;
+
+      font-size: 1.05rem;
+
+      line-height: 1.85;
+    }
+
+    .road-final {
+      margin-top: 45px;
+
+      padding-top: 35px;
+
+      border-top:
+        1px solid rgba(0,0,0,.14);
+
+      font-size:
+        clamp(
+          1.5rem,
+          2.5vw,
+          2.4rem
+        );
+
+      line-height: 1.2;
+
+      letter-spacing: -.035em;
+
+      color: #171717;
+    }
+
+    .road-final em {
+      color: #e9572b;
+      font-style: normal;
+    }
+
+
+    /* =====================================================
+       FINAL PROFILE
+    ===================================================== */
+
+    .profile-end {
+      background: #e9572b;
+
+      color: white;
+
+      padding: 110px 0;
+    }
+
+    .profile-end-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-end;
+
+      gap: 50px;
+    }
+
+    .profile-end h2 {
+      margin: 0;
+
+      font-size:
+        clamp(
+          2.8rem,
+          6vw,
+          6rem
+        );
+
+      line-height: .9;
+
+      letter-spacing: -.06em;
+    }
+
+    .profile-end-name {
+      margin-top: 30px;
+
+      font-size: .9rem;
+
+      text-transform: uppercase;
+
+      letter-spacing: .1em;
+
+      opacity: .75;
+    }
+
+    .profile-end .primary-btn {
+      background: #171717;
+
+      color: white;
+
+      flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 950px) {
+
+      .profile-hero-grid,
+      .journey-grid,
+      .philosophy-header,
+      .teacher-heart-grid,
+      .beyond-grid,
+      .stand-for-grid,
+      .road-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-hero {
+        min-height: auto;
+
+        padding:
+          80px 0 100px;
+      }
+
+      .profile-hero-side {
+        max-width: 650px;
+      }
+
+      .experience-strip-grid {
+        grid-template-columns:
+          1fr
+          1fr;
+      }
+
+      .philosophy-pillars {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .pillar:nth-child(2) {
+        border-right: none;
+      }
+
+      .pillar:nth-child(n+3) {
+        border-top:
+          1px solid rgba(
+            255,
+            255,
+            255,
+            .15
+          );
+      }
+
+      .profile-end-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+    }
+
+
+    @media (max-width: 700px) {
+
+      .about-page {
+        padding-top: 90px;
+      }
+
+      .about-container {
+        width: 88vw;
+      }
+
+      .profile-hero {
+        padding:
+          65px 0 75px;
+      }
+
+      .profile-hero h1 {
+        font-size:
+          clamp(
+            3.7rem,
+            16vw,
+            6rem
+          );
+      }
+
+      .experience-strip {
+        padding: 50px 0;
+      }
+
+      .experience-strip-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+      }
+
+      .experience-number {
+        font-size: 6rem;
+      }
+
+      .journey,
+      .leadership,
+      .philosophy,
+      .vision,
+      .beyond,
+      .stand-for,
+      .road {
+        padding:
+          85px 0;
+      }
+
+      .development,
+      .teacher-heart {
+        padding:
+          85px 0;
+      }
+
+      .development-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 40px;
+      }
+
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .impact-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .impact-card {
+        min-height: 250px;
+      }
+
+      .philosophy-pillars {
+        grid-template-columns: 1fr;
+      }
+
+      .pillar,
+      .pillar + .pillar {
+        padding:
+          28px 0;
+
+        border-right: none;
+
+        border-bottom:
+          1px solid rgba(
+            255,
+            255,
+            255,
+            .15
+          );
+      }
+
+      .pillar:last-child {
+        border-bottom: none;
+      }
+
+      .pillar:nth-child(3) {
+        border-top: none;
+      }
+
+      .pillar-number {
+        margin-bottom: 30px;
+      }
+
+      .vision-words {
+        justify-content: flex-start;
+      }
+
+      .profile-end {
+        padding:
+          80px 0;
+      }
+
+    }
+
+
+    @media (max-width: 400px) {
+
+      .profile-hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .impact-card {
+        padding: 25px;
+      }
+
+      .stand-for-list div {
+        font-size: 1.5rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       GRAIN
+  ===================================================== -->
+
+  <div class="grain"></div>
+
+
+
+  <!-- =====================================================
+       NAVIGATION
+  ===================================================== -->
+
+  <nav class="nav" id="nav">
+
+    <a
+      class="logo"
+      href="index.html"
+      aria-label="Home"
+    >
+
+      <span class="logo-dot"></span>
+
+      <span>
+        ACADEMIC<br class="logo-break">
+        LEADERSHIP
+      </span>
+
+    </a>
+
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="index.html#about">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#work">
+          What I Do
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#approach">
+          Approach
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#impact">
+          Impact
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#contact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+
+    <a
+      class="nav-cta"
+      href="index.html#contact"
+    >
+      Let's connect
+
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      >
+        <line
+          x1="7"
+          y1="17"
+          x2="17"
+          y2="7"
+        ></line>
+
+        <polyline
+          points="7 7 17 7 17 17"
+        ></polyline>
+      </svg>
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+
+  <!-- MOBILE MENU -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="index.html#about">
+      About
+    </a>
+
+    <a href="index.html#work">
+      What I Do
+    </a>
+
+    <a href="index.html#approach">
+      Approach
+    </a>
+
+    <a href="index.html#impact">
+      Impact
+    </a>
+
+    <a href="index.html#contact">
+      Contact
+    </a>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       PAGE
+  ===================================================== -->
+
+  <main class="about-page">
+
+
+    <!-- =================================================
+         HERO
+    ================================================= -->
+
+    <section class="profile-hero">
+
+      <div class="about-container">
+
+        <div class="profile-hero-grid">
+
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>01</span>
+              About Me
+            </div>
+
+
+            <h1>
+
+              Roli
+              <em>Pandey.</em>
+
+            </h1>
+
+
+            <p class="profile-subtitle">
+
+              Academic Director |
+              Educational Leader |
+              School Transformation Professional
+
+            </p>
+
+          </div>
+
+
+          <div class="profile-hero-side">
+
+            <p>
+
+              <strong>
+                Empowering Schools.
+                Inspiring Teachers.
+                Transforming Learning.
+              </strong>
+
+            </p>
+
+
+            <p>
+
+              With 15 years of experience in education,
+              Roli Pandey is an accomplished Academic
+              Director, educational leader, academic
+              strategist, and school administrator with
+              a strong focus on academic excellence,
+              teacher development, student growth, and
+              institutional transformation.
+
+            </p>
+
+
+            <div class="profile-role">
+
+              Academic Director · Principal ·
+              Principal-in-Charge · Academic Head ·
+              Inspection Head
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         EXPERIENCE STRIP
+    ================================================= -->
+
+    <section class="experience-strip">
+
+      <div class="about-container">
+
+        <div class="experience-strip-grid">
+
+
+          <div>
+
+            <div class="experience-number">
+              15
+            </div>
+
+            <div class="experience-label">
+              Years in Education
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <h3>
+              Academic leadership,
+              school development &
+              educational transformation.
+            </h3>
+
+          </div>
+
+
+          <div>
+
+            <div class="experience-label">
+              Leadership Philosophy
+            </div>
+
+            <p style="
+              color:rgba(245,240,232,.6);
+              line-height:1.7;
+              margin:12px 0 0;
+            ">
+
+              Academic rigour with empathy.
+              Innovation with structure.
+              Excellence with ethics.
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MY JOURNEY
+    ================================================= -->
+
+    <section class="journey">
+
+      <div class="about-container">
+
+        <div class="journey-grid">
+
+
+          <div class="journey-title">
+
+            <div class="about-eyebrow">
+              <span>02</span>
+              My Journey
+            </div>
+
+            <h2>
+
+              A career built
+              around <em>meaningful</em>
+              education.
+
+            </h2>
+
+          </div>
+
+
+          <div class="journey-content">
+
+            <p class="journey-question">
+
+              Roli's journey in education has been
+              driven by one central question:
+
+              <br><br>
+
+              <strong>
+                How can we make education more
+                meaningful, relevant, and
+                transformative for every learner?
+              </strong>
+
+            </p>
+
+
+            <p>
+
+              Over the years, she has worked across
+              academics, administration, teacher
+              training, curriculum planning, assessment,
+              school improvement, parent engagement,
+              student discipline, admissions, and
+              institutional development.
+
+            </p>
+
+
+            <p>
+
+              Her leadership experience has involved
+              building academic systems, mentoring
+              educators, strengthening classroom
+              practices, monitoring learning outcomes,
+              and creating processes that bring greater
+              consistency and accountability to school
+              functioning.
+
+            </p>
+
+
+            <p>
+
+              She believes that education is not merely
+              the transmission of knowledge — it is the
+              formation of character, confidence,
+              competence, and conscience.
+
+            </p>
+
+
+            <p style="
+              color:#171717;
+              font-size:1.25rem;
+              font-weight:600;
+            ">
+
+              “When teachers grow, classrooms transform.
+              When classrooms transform, children flourish.”
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TEACHER DEVELOPMENT
+    ================================================= -->
+
+    <section class="development">
+
+      <div class="about-container">
+
+
+        <div class="development-header">
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>03</span>
+              Teacher Development
+            </div>
+
+            <h2>
+
+              Strengthening
+              <em>teachers.</em>
+
+            </h2>
+
+          </div>
+
+
+          <p>
+
+            Her professional development work focuses
+            on giving educators practical frameworks,
+            reflective practice and new ways to make
+            learning meaningful.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="topic-grid">
+
+
+          <div class="topic">
+            <span class="topic-number">01</span>
+            NEP 2020
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">02</span>
+            Bloom's Taxonomy
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">03</span>
+            Activity-Based Learning
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">04</span>
+            Experiential & Conceptual Learning
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">05</span>
+            Lesson Planning
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">06</span>
+            Art Integration
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">07</span>
+            Technology Integration
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">08</span>
+            SDG Integration
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">09</span>
+            Skill-Based Learning
+          </div>
+
+          <div class="topic">
+            <span class="topic-number">10</span>
+            Child-Centred Pedagogy
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         LEADERSHIP THAT CREATES IMPACT
+    ================================================= -->
+
+    <section class="leadership">
+
+      <div class="about-container">
+
+
+        <div class="leadership-heading">
+
+          <div class="about-eyebrow">
+            <span>04</span>
+            Leadership That Creates Impact
+          </div>
+
+          <h2>
+
+            Turning academic
+            vision into
+            <em>action.</em>
+
+          </h2>
+
+          <p>
+
+            Roli's leadership philosophy combines
+            academic rigour with empathy, innovation
+            with structure, and excellence with ethics.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="impact-cards">
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              01 / ACADEMICS
+            </div>
+
+            <div>
+
+              <h3>
+                Academic Excellence
+              </h3>
+
+              <p>
+
+                Strengthening curriculum delivery,
+                lesson planning, assessment systems,
+                academic monitoring, classroom
+                observations, notebook practices,
+                and learning outcomes.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              02 / TEACHERS
+            </div>
+
+            <div>
+
+              <h3>
+                Teacher Development
+              </h3>
+
+              <p>
+
+                Creating a culture of continuous
+                professional development through
+                teacher reviews, mentoring, feedback,
+                workshops, and collaborative learning.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              03 / SCHOOL
+            </div>
+
+            <div>
+
+              <h3>
+                School Transformation
+              </h3>
+
+              <p>
+
+                Improving academic and operational
+                systems, strengthening school
+                processes, enhancing learning
+                environments, and creating greater
+                accountability across functions.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              04 / STUDENTS
+            </div>
+
+            <div>
+
+              <h3>
+                Student Development
+              </h3>
+
+              <p>
+
+                Promoting conceptual understanding,
+                creativity, communication, critical
+                thinking, life skills, values, and
+                real-world application.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              05 / FAMILIES
+            </div>
+
+            <div>
+
+              <h3>
+                Parent Partnership
+              </h3>
+
+              <p>
+
+                Building stronger communication
+                between schools and families and
+                creating systems that respond
+                meaningfully to parental concerns.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="impact-card">
+
+            <div class="impact-card-number">
+              06 / INSTITUTION
+            </div>
+
+            <div>
+
+              <h3>
+                Institutional Growth
+              </h3>
+
+              <p>
+
+                Contributing to admissions growth,
+                school visibility, parent engagement,
+                school communication, events,
+                marketing initiatives, and overall
+                institutional development.
+
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PHILOSOPHY
+    ================================================= -->
+
+    <section class="philosophy">
+
+      <div class="about-container">
+
+
+        <div class="philosophy-header">
+
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>05</span>
+              My Educational Philosophy
+            </div>
+
+            <h2>
+
+              Ethics.
+              Excellence.
+              <em>Empathy.</em>
+
+            </h2>
+
+          </div>
+
+
+          <p class="philosophy-intro">
+
+            Roli believes that academic excellence
+            without character is incomplete education.
+
+            <br><br>
+
+            A successful school should develop children
+            who can think independently, communicate
+            confidently, act responsibly, demonstrate
+            empathy, and face an ever-changing world
+            with courage and integrity.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="philosophy-pillars">
+
+
+          <div class="pillar">
+
+            <span class="pillar-number">
+              01
+            </span>
+
+            <h3>
+              Knowledge
+            </h3>
+
+            <p>
+              Developing strong conceptual
+              foundations and intellectual curiosity.
+            </p>
+
+          </div>
+
+
+          <div class="pillar">
+
+            <span class="pillar-number">
+              02
+            </span>
+
+            <h3>
+              Character
+            </h3>
+
+            <p>
+              Building honesty, responsibility,
+              respect, discipline, and compassion.
+            </p>
+
+          </div>
+
+
+          <div class="pillar">
+
+            <span class="pillar-number">
+              03
+            </span>
+
+            <h3>
+              Confidence
+            </h3>
+
+            <p>
+              Helping every learner discover their
+              voice, strengths, and potential.
+            </p>
+
+          </div>
+
+
+          <div class="pillar">
+
+            <span class="pillar-number">
+              04
+            </span>
+
+            <h3>
+              Creativity
+            </h3>
+
+            <p>
+              Encouraging children to question,
+              explore, experiment, and create.
+            </p>
+
+          </div>
+
+
+          <div class="pillar">
+
+            <span class="pillar-number">
+              05
+            </span>
+
+            <h3>
+              Real-Life Learning
+            </h3>
+
+            <p>
+              Connecting classroom learning with
+              everyday experiences and the world
+              beyond school.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         VISION
+    ================================================= -->
+
+    <section class="vision">
+
+      <div class="about-container">
+
+        <div class="vision-inner">
+
+
+          <div class="about-eyebrow"
+            style="justify-content:center;">
+            <span>06</span>
+            My Vision
+          </div>
+
+
+          <div class="vision-quote">
+
+            “To create responsible,
+            confident, ethical, and
+            innovative learners who
+            contribute positively to
+            society and lead the nation
+            with <em>knowledge,
+            compassion, and character.</em>”
+
+          </div>
+
+
+          <p class="vision-copy">
+
+            Roli envisions schools where children do
+            not learn merely to pass examinations.
+
+            <br><br>
+
+            They learn to understand.
+            To question.
+            To create.
+            To connect.
+            To contribute.
+
+            <br><br>
+
+            She advocates an education system where
+            conceptual clarity replaces rote learning,
+            curiosity replaces fear, and character
+            stands alongside achievement.
+
+          </p>
+
+
+          <div class="vision-words">
+
+            <span>Understand</span>
+
+            <span>Question</span>
+
+            <span>Create</span>
+
+            <span>Connect</span>
+
+            <span>Contribute</span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TEACHER AT HEART
+    ================================================= -->
+
+    <section class="teacher-heart">
+
+      <div class="about-container">
+
+        <div class="teacher-heart-grid">
+
+
+          <h2>
+
+            A Teacher
+            at Heart.
+
+            <br>
+
+            A Leader by
+            <em style="
+              color:#171717;
+              font-style:normal;
+            ">
+              Responsibility.
+            </em>
+
+          </h2>
+
+
+          <div class="teacher-heart-copy">
+
+            <p>
+
+              Although her professional roles have
+              evolved into leadership, Roli continues
+              to identify herself fundamentally as
+              an educator.
+
+            </p>
+
+
+            <p>
+
+              For her, leadership is not about a
+              designation or a cabin.
+
+              It is about creating direction,
+              developing people, solving problems,
+              building systems, and leaving an
+              institution stronger than it was before.
+
+            </p>
+
+
+            <p>
+
+              She believes an effective educational
+              leader must be able to see the school
+              from multiple perspectives:
+
+              through the eyes of a child,
+              the expectations of a parent,
+              the challenges of a teacher,
+              and the responsibilities of management.
+
+            </p>
+
+
+            <p>
+
+              This ability to connect these
+              perspectives shapes her leadership
+              approach.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BEYOND THE CLASSROOM
+    ================================================= -->
+
+    <section class="beyond">
+
+      <div class="about-container">
+
+        <div class="beyond-grid">
+
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>07</span>
+              Beyond the Classroom
+            </div>
+
+            <h2>
+
+              Education
+              beyond the
+              <em>classroom.</em>
+
+            </h2>
+
+          </div>
+
+
+          <div class="beyond-copy">
+
+            <p>
+
+              Roli's interests extend beyond
+              conventional school administration
+              into educational innovation,
+              leadership development, teacher
+              empowerment, conceptual education,
+              personal growth, and communication.
+
+            </p>
+
+
+            <p>
+
+              She has also authored
+              <strong>
+                Rise into Your Light
+              </strong>,
+              reflecting her belief in
+              self-discovery, inner potential,
+              confidence, and personal transformation.
+
+            </p>
+
+
+            <p>
+
+              Through her professional and creative
+              work, she aspires to reach a much larger
+              educational community and contribute to
+              a future where learning becomes more
+              meaningful, humane, relevant, and
+              transformative.
+
+            </p>
+
+
+            <div class="book-card">
+
+              <small>
+                Author
+              </small>
+
+              <h3>
+                Rise into Your Light
+              </h3>
+
+              <p>
+                Self-discovery · Inner potential ·
+                Confidence · Personal transformation
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         WHAT I STAND FOR
+    ================================================= -->
+
+    <section class="stand-for">
+
+      <div class="about-container">
+
+        <div class="stand-for-grid">
+
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>08</span>
+              What I Stand For
+            </div>
+
+            <h2>
+
+              No Fear.
+              <br>
+              No Limits.
+              <br>
+              No Compromise
+              <br>
+              on <span class="orange">
+                Values.
+              </span>
+
+            </h2>
+
+          </div>
+
+
+          <div>
+
+
+            <div class="stand-for-list">
+
+              <div>
+                <span>01</span>
+                Every child can learn.
+              </div>
+
+              <div>
+                <span>02</span>
+                Every teacher can grow.
+              </div>
+
+              <div>
+                <span>03</span>
+                Every school can evolve.
+              </div>
+
+              <div>
+                <span>04</span>
+                Every leader can create an impact.
+              </div>
+
+            </div>
+
+
+            <p class="stand-for-bottom">
+
+              My responsibility as an educational
+              leader is to create the conditions
+              in which that growth becomes possible.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ROAD AHEAD
+    ================================================= -->
+
+    <section class="road">
+
+      <div class="about-container">
+
+        <div class="road-grid">
+
+
+          <div>
+
+            <div class="about-eyebrow">
+              <span>09</span>
+              The Road Ahead
+            </div>
+
+            <h2>
+
+              Building the
+              <em>future of learning.</em>
+
+            </h2>
+
+          </div>
+
+
+          <div class="road-copy">
+
+            <p>
+
+              The next chapter of Roli Pandey's
+              journey is focused on creating
+              high-quality learning ecosystems
+              that combine strong academic
+              foundations with innovation,
+              technology, values, and real-world
+              learning.
+
+            </p>
+
+
+            <p>
+
+              Her long-term aspiration is to
+              influence education beyond the
+              boundaries of a single institution —
+              to contribute to a wider movement
+              towards conceptual education,
+              character formation, teacher
+              empowerment, and joyful learning.
+
+            </p>
+
+
+            <div class="road-final">
+
+              Because education is not only about
+              preparing children for the next
+              examination.
+
+              <br><br>
+
+              It is about preparing them
+              <em>for life.</em>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FINAL CTA
+    ================================================= -->
+
+    <section class="profile-end">
+
+      <div class="about-container">
+
+        <div class="profile-end-inner">
+
+
+          <div>
+
+            <h2>
+
+              Education with
+              <br>
+              Ethics, Excellence
+              <br>
+              &amp; <span style="
+                color:#171717;
+              ">
+                Empathy.
+              </span>
+
+            </h2>
+
+
+            <div class="profile-end-name">
+
+              Roli Pandey
+              <br><br>
+
+              Academic Director |
+              Educational Leader |
+              Educationist
+
+            </div>
+
+          </div>
+
+
+          <a
+            class="primary-btn"
+            href="index.html#contact"
+          >
+
+            Let's Connect
+
+            <span class="btn-arrow">
+              ↗
+            </span>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+
+  <footer class="footer">
+
+    <a
+      class="logo"
+      href="index.html"
+    >
+
+      <span class="logo-dot"></span>
+
+      ACADEMIC LEADERSHIP
+
+    </a>
+
+
+    <p>
+      Shaping minds. Strengthening schools.
+      Inspiring growth.
+    </p>
+
+
+    <span>
+      ©
+      <span id="year"></span>
+    </span>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       SCRIPTS
+  ===================================================== -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+  </script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
