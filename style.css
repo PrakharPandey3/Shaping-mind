@@ -2149,3 +2149,424 @@ em {
   }
 
 }
+
+/* =====================================================
+   PHOTO COLLAGE SECTION
+===================================================== */
+
+.photo-collage-section {
+  padding: 120px 6vw 140px;
+
+  background: #f3ede3;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   COLLAGE HEADER
+========================================= */
+
+.collage-header {
+  max-width: 1200px;
+
+  margin: 0 auto 70px;
+
+  display: grid;
+
+  grid-template-columns: 0.7fr 1.3fr;
+
+  gap: 8vw;
+
+  align-items: end;
+}
+
+
+.collage-header .section-label {
+  align-self: start;
+}
+
+
+.collage-intro h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(
+    3rem,
+    6vw,
+    6.5rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.065em;
+}
+
+
+.collage-intro h2 em {
+  color: #e9572b;
+
+  font-style: normal;
+}
+
+
+.collage-intro p {
+  max-width: 550px;
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.photo-gallery {
+  max-width: 1200px;
+
+  min-height: 650px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+.collage-photo {
+  position: absolute;
+
+  width: 230px;
+
+  padding: 10px 10px 18px;
+
+  margin: 0;
+
+  background: #fff;
+
+  border-radius: 3px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  cursor: pointer;
+}
+
+
+.collage-photo img {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+}
+
+
+.collage-photo figcaption {
+  margin-top: 12px;
+
+  text-align: center;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+
+  color: #171717;
+}
+
+
+/* =====================================================
+   COLLAGE POSITIONS
+===================================================== */
+
+.photo-1 {
+  top: 50px;
+  left: 4%;
+
+  transform:
+    rotate(-7deg);
+}
+
+
+.photo-2 {
+  top: 0;
+  left: 27%;
+
+  transform:
+    rotate(5deg);
+}
+
+
+.photo-3 {
+  top: 90px;
+  left: 51%;
+
+  transform:
+    rotate(-4deg);
+}
+
+
+.photo-4 {
+  top: 20px;
+  right: 3%;
+
+  transform:
+    rotate(7deg);
+}
+
+
+.photo-5 {
+  top: 340px;
+  left: 10%;
+
+  transform:
+    rotate(5deg);
+}
+
+
+.photo-6 {
+  top: 330px;
+  left: 35%;
+
+  transform:
+    rotate(-6deg);
+}
+
+
+.photo-7 {
+  top: 350px;
+  left: 60%;
+
+  transform:
+    rotate(4deg);
+}
+
+
+.photo-8 {
+  top: 300px;
+  right: 2%;
+
+  transform:
+    rotate(-7deg);
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.collage-photo:hover {
+  transform:
+    rotate(0deg)
+    scale(1.08)
+    translateY(-8px);
+
+  z-index: 20;
+
+  box-shadow:
+    0 20px 40px rgba(
+      0,
+      0,
+      0,
+      0.22
+    );
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .photo-gallery {
+    min-height: 900px;
+  }
+
+  .collage-photo {
+    width: 200px;
+  }
+
+  .photo-1 {
+    left: 2%;
+  }
+
+  .photo-2 {
+    left: 27%;
+  }
+
+  .photo-3 {
+    left: 52%;
+  }
+
+  .photo-4 {
+    right: 0;
+  }
+
+  .photo-5 {
+    left: 8%;
+    top: 350px;
+  }
+
+  .photo-6 {
+    left: 32%;
+    top: 400px;
+  }
+
+  .photo-7 {
+    left: 57%;
+    top: 350px;
+  }
+
+  .photo-8 {
+    right: 0;
+    top: 480px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .photo-collage-section {
+    padding:
+      80px 6vw 90px;
+  }
+
+
+  .collage-header {
+    display: block;
+
+    margin-bottom: 45px;
+  }
+
+
+  .collage-intro {
+    margin-top: 30px;
+  }
+
+
+  .collage-intro h2 {
+    font-size:
+      clamp(
+        2.8rem,
+        12vw,
+        4.5rem
+      );
+  }
+
+
+  .photo-gallery {
+    min-height: auto;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 25px;
+
+    position: relative;
+  }
+
+
+  .collage-photo {
+    position: relative;
+
+    width: 100%;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    right: auto !important;
+
+    transform: rotate(0deg);
+
+    padding: 8px 8px 14px;
+  }
+
+
+  .photo-1 {
+    transform: rotate(-3deg);
+  }
+
+  .photo-2 {
+    transform: rotate(3deg);
+  }
+
+  .photo-3 {
+    transform: rotate(2deg);
+  }
+
+  .photo-4 {
+    transform: rotate(-3deg);
+  }
+
+  .photo-5 {
+    transform: rotate(3deg);
+  }
+
+  .photo-6 {
+    transform: rotate(-2deg);
+  }
+
+  .photo-7 {
+    transform: rotate(-3deg);
+  }
+
+  .photo-8 {
+    transform: rotate(3deg);
+  }
+
+
+  .collage-photo:hover {
+    transform:
+      rotate(0deg)
+      scale(1.03)
+      translateY(-4px);
+  }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 450px) {
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+
+  .collage-photo {
+    max-width: 280px;
+
+    margin: 0 auto;
+  }
+
+}
