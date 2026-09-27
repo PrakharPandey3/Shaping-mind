@@ -2019,3 +2019,133 @@ em {
   }
 
 }
+
+/* =========================================
+   RP LOGO - SMALL & PROPERLY FITTED
+========================================= */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.brand-logo img {
+  width: 52px;
+  height: 52px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* NAVBAR */
+
+.nav .brand-logo {
+  width: 52px;
+  height: 52px;
+}
+
+.nav .brand-logo img {
+  width: 52px;
+  height: 52px;
+}
+
+
+/* FOOTER */
+
+.footer .brand-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.footer .brand-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .nav .brand-logo,
+  .nav .brand-logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer .brand-logo,
+  .footer .brand-logo img {
+    width: 52px;
+    height: 52px;
+  }
+
+}
+
+/* =========================================
+   PROFILE PHOTO
+========================================= */
+
+.profile-hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Photo */
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+
+  margin-bottom: 32px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #e8dfd2;
+
+  border: 4px solid #f5eee4;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Actual image */
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .profile-photo {
+    width: 85px;
+    height: 85px;
+
+    margin-bottom: 25px;
+  }
+
+}
