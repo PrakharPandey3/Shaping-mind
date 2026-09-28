@@ -235,13 +235,13 @@ em {
 
 .hero h1 .line {
   display: block;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero h1 .line > span,
 .hero h1 .line > em {
   display: inline-block;
-  transform: translateY(115%);
+  transform: none;
 }
 
 .hero-role {
@@ -2570,3 +2570,185 @@ em {
   }
 
 }
+
+/* =====================================================
+   CONTACT - NO FORM
+===================================================== */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  max-width: 850px;
+
+  margin-top: 60px;
+}
+
+
+.contact-info h2 {
+  margin: 0;
+
+  max-width: 750px;
+
+  font-size: clamp(
+    3.5rem,
+    7vw,
+    7rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.065em;
+}
+
+
+.contact-info h2 em {
+  color: #e9572b;
+
+  font-style: normal;
+}
+
+
+.contact-intro {
+  max-width: 650px;
+
+  margin: 45px 0 65px;
+
+  color: #777;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-detail {
+  padding: 22px 0;
+
+  border-top:
+    1px solid rgba(
+      0,
+      0,
+      0,
+      0.13
+    );
+
+  max-width: 600px;
+}
+
+
+.contact-detail:last-child {
+  border-bottom:
+    1px solid rgba(
+      0,
+      0,
+      0,
+      0.13
+    );
+}
+
+
+.contact-detail > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 0.72rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.13em;
+
+  color: #999;
+}
+
+
+.contact-detail > a {
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+
+  transition: color 0.25s ease;
+}
+
+
+.contact-detail > a:hover {
+  color: #e9572b;
+}
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 8px;
+}
+
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #171717;
+
+  color: #fff !important;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.social-icon:hover {
+  transform:
+    translateY(-4px);
+
+  background: #e9572b;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .contact-grid {
+    margin-top: 40px;
+  }
+
+  .contact-info h2 {
+    font-size:
+      clamp(
+        3rem,
+        14vw,
+        5rem
+      );
+  }
+
+  .contact-intro {
+    margin:
+      35px 0 45px;
+  }
+
+}
+

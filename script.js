@@ -71,10 +71,7 @@ if (!reduceMotion) {
      INITIAL STATES
   ------------------------------------------------------- */
 
-  gsap.set("#nav", {
-    opacity: 0,
-    y: -18
-  });
+  gsap.set("#nav", { opacity: 1, y: 0 });
 
   gsap.set(".hero-eyebrow", {
     opacity: 0,
@@ -139,16 +136,7 @@ if (!reduceMotion) {
     )
 
     // Main heading
-    .to(
-      ".hero h1 .line > span, .hero h1 .line > em",
-      {
-        y: 0,
-        duration: 1,
-        stagger: 0.06,
-        ease: "power3.out"
-      },
-      0.35
-    )
+
 
     // Role line
     .to(
