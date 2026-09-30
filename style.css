@@ -2911,3 +2911,216 @@ em {
 
 }
 
+/* =====================================================
+   PROFILE END / PHILOSOPHY
+===================================================== */
+
+.profile-end {
+    background: #f15a29;
+    color: #fff;
+    padding: 110px 6vw;
+    overflow: hidden;
+}
+
+.profile-end-inner {
+    max-width: 1450px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.profile-end-inner > div:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-end-inner h2 {
+    margin: 0;
+
+    font-size: clamp(4rem, 7vw, 7.5rem);
+    line-height: .88;
+    letter-spacing: -.065em;
+    font-weight: 700;
+}
+
+.profile-end-inner h2 span {
+    color: #171717 !important;
+}
+
+.profile-end-name {
+    margin-top: 45px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.philosophy-photo {
+    width: 100%;
+    max-width: 430px;
+
+    height: auto;
+
+    padding: 8px;
+
+    background: #f7f0e4;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.22);
+
+    transform: rotate(3deg);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+    overflow: hidden;
+}
+
+.philosophy-photo img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 3px;
+}
+
+.philosophy-photo:hover {
+    transform: rotate(0deg) scale(1.02);
+
+    box-shadow:
+        0 35px 70px rgba(0,0,0,.28);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.profile-end .primary-btn {
+    grid-column: 1 / -1;
+
+    justify-self: end;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    min-width: 195px;
+
+    padding: 8px 8px 8px 25px;
+
+    border-radius: 999px;
+
+    background: #171717;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.profile-end .btn-arrow {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f15a29;
+    color: #fff;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .profile-end-inner {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .philosophy-photo {
+        width: min(100%, 360px);
+        height: 430px;
+
+        justify-self: start;
+    }
+
+    .profile-end .primary-btn {
+        justify-self: start;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .profile-end {
+        padding: 75px 20px;
+    }
+
+    .profile-end-inner {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 35px;
+    }
+
+    .profile-end-inner h2 {
+        font-size: clamp(3rem, 13vw, 5rem);
+    }
+
+    .profile-end-name {
+        margin-top: 30px;
+        font-size: .75rem;
+    }
+
+    .philosophy-photo {
+        width: 260px;
+        height: 330px;
+
+        align-self: center;
+
+        transform: rotate(3deg);
+    }
+
+    .profile-end .primary-btn {
+        align-self: flex-start;
+    }
+
+}
