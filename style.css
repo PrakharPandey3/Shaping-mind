@@ -3654,50 +3654,41 @@ em {
 /* =========================================================
    MOBILE NAVIGATION
 ========================================================= */
-
 @media (max-width: 720px) {
-
-  .navbar {
-    height: 78px;
-
-    padding: 0 18px;
-  }
-
-  /* Hide desktop navigation */
 
   .navbar .nav-links,
   .navbar .nav-cta {
     display: none;
   }
 
-
-  /* Show hamburger */
-
   .navbar .menu-toggle {
     display: block;
 
     position: fixed;
-
     top: 17px;
     right: 18px;
 
     width: 44px;
     height: 44px;
+
+    z-index: 10001;
   }
 
+}
 
-  /* Keep logo visible */
 
-  .navbar .brand-logo {
-    position: absolute;
+/* Keep logo visible */
 
-    left: 15px;
-    top: 50%;
+.navbar .brand-logo {
+  position: absolute;
 
-    transform: translateY(-50%);
+  left: 15px;
+  top: 50%;
 
-    z-index: 10002;
-  }
+  transform: translateY(-50%);
+
+  z-index: 10002;
+}
 }
 
 
