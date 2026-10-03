@@ -6,20 +6,81 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
    MOBILE MENU
    ========================================================= */
 
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
 const menuToggle = document.querySelector("#menuToggle");
 const mobileMenu = document.querySelector("#mobileMenu");
 
-menuToggle.addEventListener("click", () => {
-  const open = mobileMenu.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
-});
+if (menuToggle && mobileMenu) {
 
-document.querySelectorAll(".mobile-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.addEventListener("click", () => {
+
+    const open = mobileMenu.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      String(open)
+    );
+
+    menuToggle.setAttribute(
+      "aria-label",
+      open ? "Close menu" : "Open menu"
+    );
+
   });
-});
+
+
+  /* Close menu when a link is clicked */
+
+  document.querySelectorAll(".mobile-menu a").forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+      mobileMenu.classList.remove("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        "Open menu"
+      );
+
+    });
+
+  });
+
+
+  /* Close with Escape */
+
+  document.addEventListener("keydown", (event) => {
+
+    if (
+      event.key === "Escape" &&
+      mobileMenu.classList.contains("open")
+    ) {
+
+      mobileMenu.classList.remove("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        "Open menu"
+      );
+
+    }
+
+  });
+
+}
 
 
 /* =========================================================
