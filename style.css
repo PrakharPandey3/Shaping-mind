@@ -1983,10 +1983,11 @@ em {
   left: 30px;
   top: 50%;
 
-  width: 260px;
-  height: 100px;
+  width: 320px;
+  height: 120px;
 
-  transform: translateY(-50%);
+   transform: translateY(-50%) scale(2.8);
+  transform-origin: left center;
 
   display: block;
 
